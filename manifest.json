@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "Australiafy",
+    "description": "When the Queen's English just won't do.",
+    "version": "0.1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
